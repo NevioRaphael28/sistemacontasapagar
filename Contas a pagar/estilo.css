@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+header .logo {
+    max-width: 120px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+header .logo:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+
+
+button:hover {
+    background-color: #218838;
+}
+
+#contas-lista {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.conta {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conta.paga {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.botoes .pago {
+    color: #007bff;
+}
